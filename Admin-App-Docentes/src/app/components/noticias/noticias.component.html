@@ -1,12 +1,50 @@
 <div class="container">
-    <h4 class="titulo" align="center">AGREGAR NOTICIAS</h4>
-    <div class="form">
-        <input type="text" [(ngModel)]="noticia.titulo" name="titulo" id="" placeholder="titulo" required>
-        <input type="text" [(ngModel)]="noticia.descripcion_corta" name="descripcion_corta" id="" placeholder="descripcion corta" required>
-        <textarea type="text" [(ngModel)]="noticia.descripcion_larga" name="descripcion_larga" id="" placeholder="descripcionlarga" required> </textarea>
-        <input type="text" [(ngModel)]="noticia.anexo" name="anexo" id="" placeholder="anexo" required>
-        <input type="text" [(ngModel)]="noticia.keywords" name="keywords" id="" placeholder="palabras clave separadas por coma" required>
-        <input type="submit" (click)="agregarNoticia()" value="AGREGAR">
-    </div>
-</div>
 
+<mat-tab-group mat-stretch-tabs>
+    <mat-tab label="AGREGAR">  
+            <h4 class="titulo" align="center">AGREGAR NOTICIA</h4>
+            <div class="form">
+                <input type="text" [(ngModel)]="noticia.titulo" name="titulo" id="" placeholder="titulo" required>
+                <input type="text" [(ngModel)]="noticia.descripcion_corta" name="descripcion_corta" id="" placeholder="descripcion corta" required>
+                <textarea type="text" [(ngModel)]="noticia.descripcion_larga" name="descripcion_larga" id="" placeholder="descripcionlarga" required> </textarea>
+                <input type="text" [(ngModel)]="noticia.anexo" name="anexo" id="" placeholder="anexo" required>
+                <input type="text" [(ngModel)]="noticia.keywords" name="keywords" id="" placeholder="palabras clave separadas por coma" required>
+                <input type="submit" (click)="agregarNoticia()" value="AGREGAR">
+            </div>
+    </mat-tab>
+
+    <mat-tab label="VER NOTICIAS"> 
+        <h4 class="titulo" align="center">VER NOTICIAS</h4>
+            <div class="form">
+                <input type="text" [(ngModel)]="noticia.titulo" name="titulo" id="" placeholder="titulo" required>
+                <input type="text" [(ngModel)]="noticia.descripcion_corta" name="descripcion_corta" id="" placeholder="descripcion corta" required>
+                <textarea type="text" [(ngModel)]="noticia.descripcion_larga" name="descripcion_larga" id="" placeholder="descripcionlarga" required> </textarea>
+                <input type="text" [(ngModel)]="noticia.anexo" name="anexo" id="" placeholder="anexo" required>
+                <input type="text" [(ngModel)]="noticia.keywords" name="keywords" id="" placeholder="palabras clave separadas por coma" required>
+                <input type="submit" (click)="agregarNoticia()" value="AGREGAR">
+            </div>    
+    </mat-tab>
+    <mat-tab label="ELIMINAR"> 
+        <h4 class="titulo" align="center">ELIMINAR NOTICIA</h4>
+            <div class="form">
+                <input type="text" [(ngModel)]="noticia.titulo" name="titulo" id="" placeholder="titulo" required>
+                <input type="text" [(ngModel)]="noticia.descripcion_corta" name="descripcion_corta" id="" placeholder="descripcion corta" required>
+                <textarea type="text" [(ngModel)]="noticia.descripcion_larga" name="descripcion_larga" id="" placeholder="descripcionlarga" required> </textarea>
+                <input type="text" [(ngModel)]="noticia.anexo" name="anexo" id="" placeholder="anexo" required>
+                <input type="text" [(ngModel)]="noticia.keywords" name="keywords" id="" placeholder="palabras clave separadas por coma" required>
+                <input type="submit" (click)="agregarNoticia()" value="AGREGAR">
+            </div>     
+    </mat-tab>
+    <mat-tab label="ACTUALIZAR"> 
+        <h4 class="titulo" align="center">ACTUALIZAR NOTICIA</h4>
+            <div class="form">
+                <input type="text" [(ngModel)]="noticia.titulo" name="titulo" id="" placeholder="titulo" required>
+                <input type="text" [(ngModel)]="noticia.descripcion_corta" name="descripcion_corta" id="" placeholder="descripcion corta" required>
+                <textarea type="text" [(ngModel)]="noticia.descripcion_larga" name="descripcion_larga" id="" placeholder="descripcionlarga" required> </textarea>
+                <input type="text" [(ngModel)]="noticia.anexo" name="anexo" id="" placeholder="anexo" required>
+                <input type="text" [(ngModel)]="noticia.keywords" name="keywords" id="" placeholder="palabras clave separadas por coma" required>
+                <input type="submit" (click)="agregarNoticia()" value="AGREGAR">
+            </div>
+         </mat-tab>
+  </mat-tab-group>
+</div>

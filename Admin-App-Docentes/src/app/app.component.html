@@ -1,9 +1,23 @@
-<div class="container">
-  <header>
-    <ul>
-      <a routerLink='/noticias'><li>Noticias</li></a>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <ul class="toolbar">
+      <li>
+        <a routerLink='/empleos'>Empleos</a>
+      </li>
+      <li>
+        <a routerLink='/comunidades'>Comunidades</a>
+      </li>
+      <li>
+        <a routerLink='/noticias'>Noticias</a>
+      </li>   
+      <li>
+        <a routerLink='/eventos'>Eventos</a>
+      </li>     
     </ul>
-  </header>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<div class="container">
   <router-outlet></router-outlet>
-  <footer></footer>
 </div>
